@@ -1,1 +1,61 @@
+#option-red {
+  color: red;
+}
+#option-orange {
+  color: orange;
+}
 
+#option-yellow {
+  color: yellow;
+}
+
+#option-green {
+  color: green;
+}
+
+#option-blue {
+  color: blue;
+}
+
+#option-indigo {
+  color: indigo;
+}
+
+#option-violet {
+  color: violet;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-auto-rows: auto;
+  grid-gap: 10px;
+  background-color: black;
+  padding: 10px;
+  margin: 10px;
+}
+
+.grid-container > div {
+  background-color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+h1 {
+  font-family: "Arial, Helvetica, sans-serif";
+  text-align: center;
+}
+
+h3 {
+  font-family: "Arial, Helvetica, sans-serif";
+  text-align: center;
+}
+
+.buttons {
+  text-align: center;
+}
+
+#reloadPageButton {
+  text-align: center;
+}

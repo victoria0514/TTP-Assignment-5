@@ -1,1 +1,84 @@
+<!DOCTYPE html>
 
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Assignment-5</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="buttons">
+        <h1>Click any of the options below to see what they do.. (BUTTONS ARE SPOLIERS)</h1>
+        <button onclick="addCell()">Add Cell</button>
+        <button onclick="addRow()">Add Row</button>
+        <button onclick="addColumn()">Add Column</button>
+
+        <p>
+            <button onclick="deleteCell()">Delete Cell</button>
+            <button onclick="deleteRow()">Delete Row</button>
+            <button onclick="deleteColumn()">Delete Column</button>
+        </p>
+
+        <div class="row">
+            <div class="col box border border-dark white"></div>
+            <div class="col box border border-dark white"></div>
+            <div class="col box border border-dark white"></div>
+        </div>
+        <div class="row">
+            <div class="col box border border-dark white"></div>
+            <div class="col box border border-dark white"></div>
+            <div class="col box border border-dark white"></div>
+        </div>
+        <div class="row">
+            <div class="col box border border-dark white"></div>
+            <div class="col box border border-dark white"></div>
+            <div class="col box border border-dark white"></div>
+        </div>
+
+
+        Pick a color!
+        <select class="custom-select my-1 mr-sm-2" id="colorSelect">
+            <option id="red" value="#FF2020">Red</option>
+            <option id="orange" value="#FFA500">Orange</option>
+            <option id="yellow" value="#FFFF00">Yellow</option>
+            <option id="green" value="#77B61E">Green</option>
+            <option id="blue" value="#1E56B6">Blue</option>
+            <option id="indigo" value="#3F00FF">Indigo</option>
+            <option id="violet" value="#8F00FF">Violet</option>
+            <option id="" value="" --> </option></select>
+         <button onclick="colorAll()">Color All</button>
+    </div>
+
+
+    <h3>Click button below to reset the page.</h3>
+    <div id="reloadPageButton">
+        <button
+          type="button"
+          class="reloadPageButton"
+          onClick="window.location.reload();">
+          Reload Page
+        </button>
+      </div>
+
+      <!-- makes the grid  -->
+      <!-- using grid container and grid item -->
+    <div class="grid-container" id="divgrid">
+        <div onclick="color(this)" class="grid-item"></div>
+        <div onclick="color(this)" class="grid-item"></div>
+        <div onclick="color(this)" class="grid-item"></div>
+        <div onclick="color(this)" class="grid-item"></div>
+        <div onclick="color(this)" class="grid-item"></div>
+        <div onclick="color(this)" class="grid-item"></div>
+        <div onclick="color(this)" class="grid-item"></div>
+        <div onclick="color(this)" class="grid-item"></div>
+        <div onclick="color(this)" class="grid-item"></div>
+    </div>
+
+    <script src="script.js" ></script>
+
+</body>
+</html>  
